@@ -26,3 +26,9 @@ input.addEventListener("input", saveData);
 
 
 loadData();
+
+
+document.getElementById("reset").addEventListener("click", () => {
+localStorage.removeItem("meals");
+inputs.forEach(i => (i.value = ""));
+});
