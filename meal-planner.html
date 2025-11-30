@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planificateur de repas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header>
+    <h1>Planificateur de repas de la semaine</h1>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>Petit-déjeuner</th>
+          <th>Déjeuner</th>
+          <th>Dîner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lundi</td>
+          <td><textarea data-day="lundi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="lundi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="lundi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Mardi</td>
+          <td><textarea data-day="mardi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="mardi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="mardi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Mercredi</td>
+          <td><textarea data-day="mercredi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="mercredi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="mercredi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Jeudi</td>
+          <td><textarea data-day="jeudi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="jeudi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="jeudi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Vendredi</td>
+          <td><textarea data-day="vendredi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="vendredi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="vendredi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Samedi</td>
+          <td><textarea data-day="samedi" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="samedi" data-meal="dej"></textarea></td>
+          <td><textarea data-day="samedi" data-meal="din"></textarea></td>
+        </tr>
+        <tr>
+          <td>Dimanche</td>
+          <td><textarea data-day="dimanche" data-meal="pdj"></textarea></td>
+          <td><textarea data-day="dimanche" data-meal="dej"></textarea></td>
+          <td><textarea data-day="dimanche" data-meal="din"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <button id="reset">Réinitialiser la semaine</button>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
