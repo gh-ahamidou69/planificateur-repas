@@ -9,3 +9,20 @@ data[key] = input.value;
 });
 localStorage.setItem("meals", JSON.stringify(data));
 }
+
+
+function loadData() {
+const data = JSON.parse(localStorage.getItem("meals")) || {};
+inputs.forEach(input => {
+const key = input.dataset.day + "-" + input.dataset.meal;
+input.value = data[key] || "";
+});
+}
+
+
+inputs.forEach(input => {
+input.addEventListener("input", saveData);
+});
+
+
+loadData();
